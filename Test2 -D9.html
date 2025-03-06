@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assent/lib/normalize.css">
+
+
+    <style>
+
+        section{
+            width: 100vw;
+            height: 100vh;
+
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+
+        }
+
+        section>div{
+
+            width: 200px;
+            height:300px;
+            background-color: #1a82ff;
+            border: #090808 2px solid;
+            margin:10px;
+        }
+
+
+        @media  all and (max-width: 800px){
+            section{
+
+                grid-template-columns: repeat(3,1fr);
+
+
+            }
+
+        }
+
+        @media  all and (max-width: 400px){
+            section{
+
+                grid-template-columns: repeat(2,1fr);
+
+
+            }
+
+            }
+         @media  all and (max-width: 200px){
+            section{
+
+                grid-template-columns: repeat(1,1fr);
+
+
+            }
+
+        }
+    </style>
+</head>
+
+
+
+<body>
+<section>
+
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</section>
+
+</body>
+</html>

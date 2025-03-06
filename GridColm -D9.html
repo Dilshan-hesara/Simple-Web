@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <style>
+
+    section{
+      width: 1000px;
+      height: 500px;
+      border: 1px solid black;
+      display: grid;
+      grid-template-columns: repeat(3 ,1fr);
+
+    }
+
+    section>div{
+      border:2px solid #FF9D23;
+      background-color: #13efdc;
+    }
+
+    section>div:nth-child(1){
+
+      background-color: #636363;
+    }
+
+    section>div:nth-child(2){
+      grid-column: 2/4;
+      background-color: #FF9D23;
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+<section>
+
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</section>
+</body>
+</html>

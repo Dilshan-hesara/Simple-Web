@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assent/lib/normalize.css">
+    <link rel="stylesheet" href="assent/lib/fontawesome/css/all.min.css">
+
+
+    <style>
+
+
+        /*header{*/
+
+        /*    background-color: #474747;*/
+        /*    background-repeat: no-repeat;*/
+        /*    background-size: cover;*/
+        /*    background-position: center;*/
+        /*    width: 100%;*/
+        /*    height: 60px;*/
+        /*    position: relative;*/
+
+        /*}*/
+
+        /*nav{*/
+
+        /*    display: flex;*/
+        /*    padding:  0.5px 35px;*/
+        /*    align-items: center;*/
+        /*}*/
+        /*nav ul {*/
+        /*    list-style: none;*/
+        /*    display: flex;*/
+        /*    gap:50px;*/
+
+        /*}*/
+        /*nav>img{*/
+        /*    width: 30px; !* Set icon size *!*/
+        /*    height: 30px;*/
+        /*}*/
+
+
+
+        /*header img{*/
+        /*    position: absolute;*/
+        /*    width: 100px;*/
+        /*    height: 50px;*/
+        /*    top: 10px;*/
+        /*    left: 10px;*/
+        /*}*/
+
+        /*header nav{*/
+        /*    display: flex;*/
+        /*    padding: 10px 10px;*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    right: 0;*/
+        /*}*/
+
+        /*header nav ul li a{*/
+        /*    text-decoration: none;*/
+        /*    color: black;*/
+        /*}*/
+
+        /*header nav ul{*/
+        /*    display: flex;*/
+        /*    list-style: none;*/
+        /*    gap: 20px;*/
+        /*}*/
+
+
+
+
+        header{
+
+            background-color: #858080;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            width: 100%;
+            height: 50px;
+            padding: 10px 0;
+        }
+
+
+
+        header img {
+            height: 40px;
+            width: 40px;
+            padding: 1px 10px;
+        }
+
+        header nav{
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+
+
+        }
+
+        header nav ul{
+
+            display: flex;
+            list-style: none;
+            gap: 30px;
+
+
+
+        }
+
+
+
+        /*mobile */
+        @media all and (max-width: 550px){
+
+
+            header{
+
+                background-color: #20bc8d;
+                background-repeat: no-repeat;
+
+            }
+
+            nav{
+                display: none;
+            }
+
+            .hero-setion{
+                padding: 0 10px;
+            }
+            .hero-setion .hero-poto img {
+                width: 200px;
+            }
+
+        }
+
+
+
+
+        /*tab*/
+        @media all and (max-width: 740px){
+
+
+             .hero-setion{
+
+                 flex-direction: column-reverse;
+             }
+
+            .hero-setion .hero-poto img{
+                width: 250px;
+            }
+
+
+
+            header{
+
+                background-color: #dc6200;
+                background-repeat: no-repeat;
+
+            }
+
+            nav{
+                display: none;
+            }
+
+        }
+
+
+        /*seves*/
+        #ser>div:first-child{
+            padding: 0 50px;
+            margin-bottom: 100px;
+
+        }
+
+        #ser h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+
+        #ser>div:first-child>div{
+            width: 20px;
+
+            display: grid;
+            background-color: #1236c1;
+
+        }
+
+        .hero-setion{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+            margin: 70px 0;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .hero-setion .text{
+            flex:5;
+        }
+
+        .hero-setion .hero-poto {
+
+            flex:2;
+
+            display: flex;
+            justify-content: right;
+        }
+        .hero-setion .hero-poto img{
+            width: 350px;
+            border-radius: 50%;
+
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+<header>
+    <img src="assent/images/img.png" title="logo" alt="logo">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ser">Servies</a></li>
+            <li><a href="#video">Videos</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </nav>
+
+
+</header>
+<!--            home -->
+<section class="hero-setion" id="home">
+
+    <div class="text">
+
+        <h1>Dilshan hesara</h1>
+        <h2>And I'm a software developer</h2>
+        <button>Download Cv</button> <br><br>
+
+    </div>
+
+
+
+    <!--    rigth  side-->
+
+
+    <div class="hero-poto">
+        <img src="assent/images/01P.jpg" alt="profile photo" >
+    </div>
+
+
+</section>
+
+
+
+<section id="ser">
+
+
+    <div>
+
+        <h1>Serves</h1>
+
+        <!--        left side-->
+        <p>ewfiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+
+
+
+</section>
+
+
+<section id="video">
+    <h1>Videos</h1>
+
+
+    <video src="assent/videos/car.mp4"
+           controls
+           autoplay
+           muted
+           loop
+
+           poster="assent/images/01.png"
+           width="300"
+           height="">
+
+</section>
+
+
+<section id="education">
+    <h1>Education</h1>
+
+
+    <div>
+        <img src="" alt=" Sri Sucharithodaya Dhamma School">
+        <p>Sri Sucharithodaya - Kaluthara <br>2009 - 2018<br>Grade 1 - Grade 11 <br>Finished Bauddha Dharmacharya </p>
+    </div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+    <div class="footer-bottom">
+        © Dilshan Hesara, 2025. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+<script></script>
+
+</body>
+</html>
