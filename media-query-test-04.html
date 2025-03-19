@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Query</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assent/lib/normalize.css">
+  <style>
+
+    #header {
+      background: lightpink;
+      height: 50px;
+      position: relative;
+    }
+
+    #logo {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    #navigation {
+      width: fit-content;
+      height: fit-content;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    #menu-btn {
+      height: fit-content;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+      display: none;
+    }
+
+    #hero {
+      height: calc(100vh - 50px);
+      background: lightblue;
+      position: relative;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+
+    #hero>div {
+      position: relative;
+    }
+
+    #hero>div>div {
+      width: fit-content;
+      height: fit-content;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -80px;
+      bottom: 0;
+      margin: auto;
+
+      text-align: center;
+      font-size: 36px;
+    }
+
+    #services {
+      height: 100vh;
+      background: lightgreen;
+      position: relative;
+
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    #services>div:first-child {
+      height: 15vh;
+      text-align: center;
+    }
+
+    #services>div:first-child>h1 {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+
+      font-size: 56px;
+    }
+
+    #services>div:nth-child(2) {
+      height: 85vh;
+      position: relative;
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+
+    #services>div:nth-child(2)>div {
+      height: 50vh;
+      border: 1px solid black;
+      margin: 20px;
+      background: lightskyblue;
+      text-align: center;
+    }
+
+    #awards {
+      height: 100vh;
+      background: lightsalmon;
+      position: relative;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+
+    #awards>div {
+      position: relative;
+    }
+
+    #awards>div>div {
+      width: fit-content;
+      height: fit-content;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 30px;
+    /bottom: 0;/
+    margin: auto;
+
+      text-align: center;
+    }
+
+    #awards>div>div>h1 {
+      font-size: 56px;
+    }
+
+    #footer {
+      background: lightseagreen;
+      height: 50px;
+      position: relative;
+      display: grid;
+      text-align: center;
+    }
+
+    @media all and (max-width: 500px) {
+      #menu-btn {
+        display: block;
+      }
+
+      #navigation {
+        display: none;
+      }
+
+      #hero {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+      #hero>div>div {
+        font-size: 15px;
+      }
+
+      #services>div:first-child>h1 {
+        font-size: 36px;
+      }
+
+      #services>div:nth-child(2) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+      #services>div:nth-child(2)>div {
+        height: 30vh;
+        margin: 20px;
+        text-align: center;
+        font-size: 9px;
+      }
+
+      #awards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+      #awards>div>div>h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header id="header">
+  <img id="logo" src="assent/images/img.png" width="" title="ijse" alt="ijse">
+
+  <nav id="navigation">
+    <a href="#header">Home</a>
+    <a href="#services">About</a>
+    <a href="#awards">Career</a>
+    <a href="#footer">Contact</a>
+  </nav>
+
+  <button id="menu-btn">Menu</button>
+</header>
+
+<section id="hero">
+  <div>
+    <div>
+      <h1>MAHEN</h1>
+      <h2>Full Stack Dev</h2>
+      <button>Explore</button>
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <img src="assent/images/img.png" width="300px" title="photo" alt="photo">
+    </div>
+  </div>
+
+</section>
+
+<section id="services">
+  <div>
+    <h1>Services</h1>
+  </div>
+
+  <div>
+    <div>
+      <h2>WebDev</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum dignissimos ducimus eveniet, fuga harum molestiae natus provident quaerat repellat soluta tempora ullam unde. Doloribus eum excepturi incidunt nemo quasi?</p>
+      <button>Explore</button>
+    </div>
+    <div>
+      <h2>WebDev</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum dignissimos ducimus eveniet, fuga harum molestiae natus provident quaerat repellat soluta tempora ullam unde. Doloribus eum excepturi incidunt nemo quasi?</p>
+      <button>Explore</button>
+    </div>
+    <div>
+      <h2>WebDev</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum dignissimos ducimus eveniet, fuga harum molestiae natus provident quaerat repellat soluta tempora ullam unde. Doloribus eum excepturi incidunt nemo quasi?</p>
+      <button>Explore</button>
+    </div>
+    <div>
+      <h2>WebDev</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum dignissimos ducimus eveniet, fuga harum molestiae natus provident quaerat repellat soluta tempora ullam unde. Doloribus eum excepturi incidunt nemo quasi?</p>
+      <button>Explore</button>
+    </div>
+  </div>
+</section>
+
+<section id="awards">
+  <div>
+    <div>
+      <img src="assent/images/img.png" width="300px" title="photo" alt="photo">
+    </div>
+  </div>
+  <div>
+    <div>
+      <h1>Awards</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur iusto quasi. Commodi dicta eius est exercitationem ipsa minus nobis qui, quia quibusdam, quo repudiandae rerum, sit suscipit tempore totam.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <h2>© Copyright 2025</h2>
+</footer>
+
+</body>
+</html>

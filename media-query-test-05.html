@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assent/lib/normalize.css">
+  <link rel="stylesheet" href="assent/lib/fontawesome/css/all.css">
+
+  <style>
+
+    header {
+      height: 50px;
+      background-color: #8acd21;
+      padding: 10px;
+      position: relative;
+    }
+
+    header>nav {
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    header>nav>a{
+      text-decoration: none;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 20px;
+    }
+
+    header>img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 25px;
+
+      left: 25px;
+    }
+
+
+    body>header>button{
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      bottom: 0;
+      margin:auto;
+      display: none;
+
+    }
+
+       header>nav>a{
+      text-decoration: none;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 20px;
+    }
+
+    .hero{
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 0px);
+      background-color: lightskyblue;
+      display: grid;
+      grid-template-columns: repeat(2 ,1fr);
+      grid-template-rows: repeat(1, 1fr);
+
+    }
+
+    .hero>div {
+      position: relative;
+    }
+
+    .hero>div>div{
+      width: fit-content;
+      height: fit-content;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+      font-size: 25px;
+      text-align: center;
+    }
+    .hero>div:last-child>div>img{
+      width: 350px;
+    }
+
+
+
+
+    /*  #home{*/
+  /*    position: relative;*/
+
+  /*    width: 100%;*/
+  /*    height: calc(100vh - 50px);*/
+  /*    background-color: #cdcdab;*/
+  /*    display: grid;*/
+  /*    grid-template-columns: repeat(2, 1fr);*/
+  /*    grid-template-rows: repeat(1, 1fr);*/
+  /*}*/
+
+  /*#home>div:last-child>div:last-child>img{*/
+
+  /*    width: 350px;*/
+
+  /*  }*/
+
+  /*  .hero>div {*/
+  /*    position: relative;*/
+  /*  }*/
+
+  /*  #home>div:first-child>div:first-child{*/
+  /*    position: absolute;*/
+
+  /*    !*background-color: #FF9D23;*!*/
+  /*    width: fit-content;*/
+  /*    height: fit-content;*/
+  /*    left: 150px;*/
+  /*    top: 0;*/
+  /*    bottom: 0;*/
+  /*    margin: auto;*/
+
+  /*  }*/
+  /*  #home>div:first-child>div:first-child>h1{*/
+  /*    font-size: 60px;*/
+  /*    color: red;*/
+
+  /*  }*/
+
+  /*  #home>div:last-child>div:last-child{*/
+  /*    position: absolute;*/
+  /*    width: fit-content;*/
+  /*    height: fit-content;*/
+  /*    right: 150px;*/
+  /*    top: 0;*/
+  /*    bottom: 0;*/
+  /*    margin: auto;*/
+
+  /*    !*background-color: red;*!*/
+
+  /*  }*/
+
+    #ser{
+      background-color: #FF9D23;
+      width: 100%;
+      height: 100vh
+    }
+
+    #ser>section{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      box-sizing: border-box;
+
+    }
+
+
+    #ser>section>div{
+      height: 300px;
+      border: 1px solid black;
+      border-radius: 20px;
+      margin: 5px;
+    }
+
+    #ser>section>div>h3{
+      padding: 10px;
+    }
+
+
+
+    #ser>section>div>h2{
+      text-align: left;
+    }
+
+    #ser>section>div>p{
+      padding: 10px;
+    }
+
+    #ser>h2{
+      text-align: center;
+      color: #1a82ff;
+      font-size: 30px;
+      padding: 30px;
+    }
+
+    #car{
+      width: 100vw;
+      height: 100vh;
+
+      background-color: #1ce1be;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+
+    #car>div:first-child{
+      /*background-color: #8a125d;*/
+
+      width: 90%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+
+    }
+
+    #car>div:first-child>h2{
+      font-size: 50px;
+
+      color: #575757;
+      text-align: left;
+    }
+
+    #car>div:first-child>iframe{
+      width:710px;
+      height:415px;
+    }
+
+
+
+
+    #car>div:last-child{
+      /*background-color: red;*/
+      width: 50%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+
+    }
+
+    #car>div:last-child>h2{
+      font-size: 40px;
+      color: #575757;
+      text-align: center;
+    }
+    #car>div:last-child>p{
+
+      color: red;
+      font-size: 20px;
+    }
+
+    #work{
+
+      width: 100vw;
+      height: 100vh;
+      background-color: #8a125d;
+    }
+
+    #work>h1{
+
+      color: #1a82ff;
+      text-align: center;
+      font-size: 50px;
+
+    }
+
+    footer{
+      text-align: center;
+      font-size: 14px;
+      color: #474747;
+      background-color: #1a82ff;
+      padding: 5px 0;
+    }
+
+
+
+    @media all and (max-width: 500px) {
+      body>header>nav{
+        display: none;
+      }
+      body>header>button{
+        display:block;
+
+
+      }
+
+      .hero{
+        grid-template-columns: repeat(1 ,1fr);
+        grid-template-rows: repeat(2 ,1fr);
+      }
+
+      .hero>div {
+        font-size: 15px;
+      }
+
+      .hero>div:last-child>div>img{
+        width: 250px;
+      }
+
+      #ser>section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+
+      #car {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+
+      #car>div:first-child>iframe{
+        width:310px;
+        height:215px;
+      }
+      /*#home{*/
+      /*  grid-template-columns: repeat(1 ,1fr);*/
+      /*  grid-template-rows: repeat(2 ,1fr);*/
+      /*}*/
+    }
+
+
+
+
+
+  </style>
+
+
+</head>
+<body>
+
+  <header>
+
+    <img src="assent/images/img.png">
+
+    <nav>
+
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Career</a>
+      <a href="#">Contact</a>
+
+    </nav>
+
+    <button id="menu-btn">Menu</button>
+
+
+  </header>
+
+  <main>
+
+    <section class="hero" >
+
+      <div>
+        <div>
+          <h1>Dilshan Hesara</h1>
+
+          <h3>Fullstack Developer</h3>
+          <button>Explore</button>
+        </div>
+
+      </div>
+
+      <div>
+
+        <div>
+          <img src="assent/images/img.png" >
+        </div>
+
+      </div>
+
+
+
+
+
+    </section>
+
+
+    <section id="ser">
+      <h2>Services</h2>
+      <section>
+        <div>
+          <h3>wwwww</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi dolor dolore est fuga incidunt, itaque maiores nemo neque nesciunt possimus quaerat, quas, ratione rem repudiandae sed sunt tempora vero!
+          </p>
+        </div>
+        <div>
+          <h3>fdhth</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus deleniti eaque ipsum laborum molestiae, officiis optio placeat? Aut dolorem doloribus dolorum eveniet illo modi mollitia officia, quia ratione vero. Itaque!
+          </p>
+        </div>
+        <div>
+          <h3>atmnyrmk</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, corporis culpa dolor excepturi exercitationem id molestiae nisi, officiis optio quidem ratione sint voluptatem voluptates? Aperiam atque debitis mollitia nulla quo.
+          </p>
+        </div>
+
+        <div>
+          <h3>atgng</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi, facere id illum maxime nesciunt reiciendis voluptatem voluptatum. Ea explicabo, illum libero nesciunt nihil nulla pariatur sunt! Accusantium, cupiditate, nemo!
+          </p>
+        </div>
+      </section>
+
+    </section>
+
+    <section id="car">
+
+      <div>
+        <h2>Crrrr</h2>
+
+        <iframe  src="https://www.youtube.com/embed/PT2_F-1esPk?si=p2SaBBMHBFBh1cst&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </div>
+
+      <div>
+
+        <h2>Infor</h2>
+
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci at autem dicta, dolor ex fugiat fugit ipsum itaque laborum maxime molestiae numquam, perferendis quo repellendus reprehenderit sint voluptate?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A necessitatibus officia soluta temporibus tenetur. Exercitationem mollitia, reprehenderit. Alias eius ex facilis inventore iure modi voluptatibus. Illum optio perferendis voluptatem voluptatibus.
+        </p>
+      </div>
+
+    </section>
+
+
+    <section id="work">
+
+      <h1>wwthgr</h1>
+    </section>
+
+
+
+  </main>
+
+
+
+<footer>
+
+  <h1>©all right reseved Dilshan2025</h1>
+
+</footer>
+
+
+</body>
+</html>
