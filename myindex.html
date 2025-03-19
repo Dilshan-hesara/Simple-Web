@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="assent/lib/normalize.css">
+
+
+  <style>
+
+    body{
+      background-color:#E2E2E2;
+    }
+
+    header{
+      background-color: #F8F8F8;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 28px;
+      padding: 10px 0;
+      position: relative;
+
+
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header>div>img{
+      position: absolute;
+      width: 30px;
+      top: 10px;
+      left: 10px;
+
+    }
+    header>div>a{
+      display: flex;
+      position: absolute;
+
+      padding: 4px;
+      left: 60px;
+
+    }
+
+
+    header nav{
+
+      width: fit-content;
+      height: fit-content;
+      padding: 10px 10px;
+      position: absolute;
+      top: 0;
+      right: 30px;
+      /*left: 0;*/
+      bottom: 0;
+      margin: auto;
+    }
+
+
+    header nav ul{
+      display: flex;
+      list-style: none;
+      gap: 40px;
+      position: relative;
+    }
+
+
+    #home {
+      position: relative;
+
+      align-items: center;
+
+      width: 100%;
+      height: calc(100vh - 50px);
+
+
+      display: grid;
+      grid-template-columns: repeat(2 ,1fr);
+      grid-template-rows: repeat(1, 1fr);
+
+
+    }
+
+    #home>div{
+      position: relative;
+    }
+
+    #about{
+
+      background-color: #c6bab0;
+      position: relative;
+
+      align-items: center;
+
+      width: 100%;
+      height: calc(100vh - 50px);
+
+
+      display: grid;
+      grid-template-columns: repeat(2 ,1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+
+    #skills {
+
+      background-color: #909090;
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 0px);
+
+
+
+    }
+    #skills>div>h2 {
+
+      text-align: center;
+
+      font-size: 36px;
+    }
+    #skills>p {
+
+
+      text-align: left;
+      font-size: 20px;
+
+      padding: 20px 52px;
+
+    }
+
+    #education {
+      background-color: #444444;
+
+      padding: 230px 69px;
+    }
+
+    #projects {
+      background-color: aqua;
+
+      padding: 230px 69px;
+    }
+
+    #contact {
+      background-color: #333333;
+
+      padding: 134px 69px;
+    }
+
+
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+
+
+    .footer-bottom {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+      text-align: center;
+
+    }
+
+    section#sobre {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      padding: 5px 20px;
+    }
+
+    .tecnologias {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px; /* Adjust width */
+      height: 80px; /* Adjust height */
+      background: #F9FAFB;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+      margin: 12px;
+    }
+
+    .item img {
+      width: 50px; /* Adjust icon size */
+      height: 50px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+      position: relative;
+    }
+
+    .item.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .item {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.6s ease-out;
+    }
+
+
+  </style>
+
+</head>
+<body>
+
+<div class="social-media">
+  <div class="social-icons">
+    <div>
+      <a href="https://www.youtube.com/@Dilshan-Hesara"><img src="assets/images/social/youtube.png" alt="YouTube"></a>
+      <a href="https://www.linkedin.com/in/dilshan-hesara/"><img src="assets/images/social/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://web.facebook.com/people/Dilshan-Hesara/"><img src="assets/images/social/fb.png" alt="Facebook"></a>
+      <a href="mailto:hesarsdilshan@gmail.com"><img src="assets/images/social/email2.png" alt="Email"></a>
+      <a href="https://x.com/DilshanHesara"><img src="assets/images/social/x.png" alt="X"></a>
+      <a href="https://www.instagram.com/dilshanhesara/"><img src="assets/images/social/insta.png" alt="Instagram"></a>
+    </div>
+
+    <div>
+      <a href="https://github.com/Dilshan-hesara"><img src="assets/images/social/git.png" alt="Git Hub"></a>
+      <a href="https://www.threads.net/@dilshanhesara"><img src="assets/images/social/threds.png" alt="Threads"></a>
+      <a href="https://www.reddit.com/user/dilshan_hesara/"><img src="assets/images/social/reditt.png" alt="Reddit"></a>
+      <a href="https://wordpress.com/view/hesarsdilshan.wordpress.com"><img src="assets/images/social/wp.png" alt="WordPress"></a>
+      <a href="https://www.pinterest.com/hesarsdilshan/"><img src="assets/images/social/pin.png" alt="Pinterest"></a>
+      <a href="#"><img src="assets/images/social/line.png" alt="Line"></a>
+    </div>
+    <div>
+      <a href="live:.cid.b0788e94efe9f0ba"><img src="assets/images/social/skype.png" alt="Skype"></a>
+      <a href="#"><img src="assets/images/social/wc.png" alt="Wechat"></a>
+      <a href="https://dilshan-hesara.medium.com/"><img src="assets/images/social/m.png" alt="Medium"></a>
+      <a href="https://dilshanhesara.blogspot.com/"><img src="assets/images/social/blo.png" alt="Blogger"></a>
+      <a href="#"><img src="assets/images/social/snap.png" alt="SnapChat"></a>
+      <a href="https://leetcode.com/u/Dilshan-hesara/"><img src="assets/images/social/leet.png" alt="Leetcode"></a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<br>
+<header>
+
+  <div>
+    <img src="assets/images/LOGO.jpg" title="logo" alt="logo" height="30" width="30">
+    <a href="#home">Dilshan Hesara</a>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<br>
+<!--            home -->
+
+<!--    left side-->
+
+<section id="home">
+
+  <div>
+
+    <div>
+      <h3>Hello It’s Me</h3>
+      <h1>Dilshan hesara</h1>
+      <h2>And I'm a Software Developer</h2>
+      <p>Constantly focused on learning and expanding my expertise, crafting ever-improving, high-performing solutions</p>
+
+      <div class="social-links">
+        <a href="https://www.youtube.com/@Dilshan-Hesara"><img src="assets/images/01.png" width="25" alt="YouTube"></a>
+        <a href="https://www.linkedin.com/in/dilshan-hesara/"><img src="assets/images/02.png" width="25" alt="LinkedIn"></a>
+        <a href="https://github.com/Dilshan-hesara"><img src="assets/images/03.png" width="25" alt="GitHub"></a>
+        <a href="https://www.instagram.com/dilshanhesara/"><img src="assets/images/04.png" width="25" alt="Instagram"></a>
+      </div>
+
+      <div>
+        <a href="https://www.youtube.com/@Dilshan-Hesara" class="connect-button" download>Connect with me:</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div>
+
+    <div class="profile-picture-container">
+      <img src="assets/images/01P.jpg" alt="profile photo">
+    </div>
+
+  </div>
+
+
+</section>
+
+<!--        right side-->
+
+
+
+
+<!--            about -->
+
+<section id="about">
+
+  <div>
+
+    <!--        rigth side-->
+    <div class="profile-picture-container">
+      <img src="assets/images/01P.jpg" alt="profile poto" width="150"></a>
+    </div>
+  </div>
+  <div>
+    <!--        left side-->
+    <div>
+      <h2>About Me</h2>
+      <h4> Back-End Developer</h4>
+      <p>I am a constantly evolving web developer passionate about designing captivating web solutions with great attention to detail. I also enjoy developing 2d games and applications for edutainment and gamification, blending creativity with technology.</p>
+      <a href="#reachme" class="connect-button">S E E  MORE:</a>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+</section>
+
+<!--            skils-->
+
+<section id="skills">
+
+  <div>
+
+    <h2> Skills & Abilities</h2>
+    <P>I am constantly seeking to learn and grow in the vast universe of technology, always eager for challenges that allow me to expand my horizons and enhance my skills. Below are the technologies I have knowledge of :</P>
+
+  </div>
+
+
+
+    <div>
+
+      <div>
+        <img src="" alt="Java">
+        <img src="" alt="MySQL">
+        <img src="" alt="JavaScript">
+        <img src="" alt="Html">
+        <img src="" alt="CSS">
+        <img src="" alt="Figma">
+      </div>
+
+    </div>
+
+
+
+</section>
+
+<!--    education-->
+
+<section id="education">
+  <h2>Education</h2>
+  <!--        <div>-->
+  <!--            <img src="" alt="K / Velapura M.V ">-->
+  <!--            <p>K/Velapura Maha Vidyalaya - Kaluthara<br>2009 - 2022<br>Grade 01 - Grade 13<br>Finished Both O/L & A/L</p>-->
+  <!--        </div>-->
+
+  <div>
+    <img src="" alt=" Sri Sucharithodaya Dhamma School">
+    <p>Sri Sucharithodaya - Kaluthara <br>2010 - 2021<br>Grade 1 - Grade 11 <br>Finished Bauddha Dharmacharya </p>
+  </div>
+
+
+
+  <div>
+    <h5>languages</h5>
+    <P>English Sinhala Japanese</P>
+
+  </div>
+
+</section>
+<!--            projects-->
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div>
+    <h3>Projects</h3>
+    <div>
+      <img src="" alt="Project 1">
+      <img src="" alt="Project 2">
+    </div>
+    <div>
+      <img src="" alt="Project 3">
+      <img src="" alt="Project 4">
+    </div>
+  </div>
+
+  <div>
+    <h3>Assignments</h3>
+    <div>
+      <img src="" alt="Assignments 01">
+      <img src="" alt="Assignments 02">
+      <img src="" alt="Assignments 03">
+      <img src="" alt="Assignments 04">
+    </div>
+    <div>
+      <img src="" alt="Assignments 05">
+      <img src="" alt="Assignments 06">
+      <img src="" alt="Assignments 07">
+      <img src="" alt="Assignments 08">
+    </div>
+    <div>
+      <img src="" alt="Assignments 09">
+      <img src="" alt="Assignments 10">
+      <img src="" alt="Assignments 11">
+      <img src="" alt="Assignments 12">
+    </div>
+
+    <div>
+      <img src="" alt="Assignments 13">
+      <img src="" alt="Assignments 14">
+      <img src="" alt="Assignments 15">
+      <img src="" alt="Assignments 16">
+    </div>
+  </div>
+
+</section>
+
+<!--    contact-->
+
+<section id="contact">
+  <div>
+    <h2>Let's get in touch!</h2>
+    <p>Leave your details and a short message below !</p>
+  </div>
+
+
+  <div>
+    <label for="full-name" ></label><br>
+    <input type="text" id="full-name" placeholder="Enter Your  Name" name="fname"></input>
+  </div>
+
+  <br>
+
+  <div>
+    <label for="email"></label><br>
+    <input type="text" id="email" placeholder="Enter Your Email " name="email"></input>
+  </div>
+
+  <br>
+
+  <div>
+    <label for="msg"></label><br>
+    <textarea
+            id="msg"
+            placeholder="Enter Your Message"
+            rows="10"
+            cols="50"
+            name="add"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">S E N D</button>
+  </div>
+
+
+</section>
+
+
+
+
+
+<footer>
+  <h3>Dilshan Technologies (PVT) Ltd.</h3>
+
+
+  <!--     2   </div>-->
+
+
+  <div class="footer-section">
+    <p>Phone</p>
+    <a href="tel:070-333-3333">070-333-3333</a>
+  </div>
+  <div class="footer-section">
+    <p>Email</p>
+    <a href="mailto:hesarsdilshan@gmail.com">hesarsdilshan@gmail.com</a>
+  </div>
+  <div class="footer-section">
+    <p>Address</p>
+    <p>NO 200, Galle Road, Kaluthara South</p>
+  </div>
+
+
+  <div class="footer-content">
+
+  </div>
+
+  <div class="footer-bottom">
+    © Dilshan Hesara, 2025. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>
+
