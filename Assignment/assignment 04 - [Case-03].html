@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        :root{
+            --width: 200px;
+            --height: 100px;
+        }
+
+        body{
+            overflow: hidden;
+        }
+
+        div{
+            width: var(--width);
+            height: var(--height);
+            background-color: #ff0000;
+            border-radius: 10px;
+            animation: my-animation 5s infinite;
+        }
+
+        @keyframes my-animation {
+            0%{
+                margin-left: 0;
+                margin-top: 0;
+                transform: rotate(0deg);
+                background-color: #000eff;
+            }
+            25%{
+                margin-left: calc(100vw - var(--width));
+                margin-top: 0;
+                transform: rotate(90deg);
+                background-color: rgba(31, 255, 216, 0.45);
+            }
+            50%{
+                margin-left: calc(100vw - var(--width));
+                margin-top: calc(100vh - var(--height));
+                transform: rotate(180deg);
+                background-color: #e7c5c5;
+            }
+            75%{
+                margin-left: 0;
+                margin-top: calc(100vh - var(--height));
+                transform: rotate(270deg);
+                background-color: #535363;
+            }
+            100%{
+                margin-left: 0;
+                margin-top: 0;
+                transform: rotate(360deg);
+                background-color: #a56f3b;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
