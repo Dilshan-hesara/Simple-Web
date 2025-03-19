@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="assent/lib/normalize.css">
+
+  <style>
+
+    :root{
+      --dives: 100px
+    }
+
+    section {
+      width: 1000px;
+      height: 500px;
+      border: 2px solid black;
+      position: relative;
+    }
+
+    div {
+      width: var(--dives);
+      height: 100px;
+      border: 2px solid #1ce1be;
+      background-color: #7e5f5f;
+
+      position: absolute;
+      animation-name: my;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes my {
+
+      0% {
+       margin: 0;
+      }
+      25% {
+        top: 0;
+        left: calc(100% - 100px);
+
+      }
+      50% {
+
+
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+      }
+      75% {
+        top: calc(100% - 100px);
+        left: 0;
+      }
+      100% {
+        top: 0;
+        left: 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<section>
+  <div></div>
+</section>
+
+</body>
+</html>

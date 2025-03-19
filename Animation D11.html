@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: #FF9D23;
+      border: 2px solid #474747 ;
+      animation-name:my;
+
+      animation-duration: 6s;
+
+      animation-delay: 2s;
+
+      /*animation eka dana count ek infinite keynna unlimeted v*/
+      animation-iteration-count: 3;
+      /*animation-iteration-count: infinite;*/
+
+
+      /*key fream eke start ek gnna vidiha */
+      animation-direction: alternate;
+
+      animation-timing-function: ease;
+    }
+
+
+    @keyframes my {
+
+      from{
+        /*transform: rotate(0deg);*/
+      }
+      to{
+        /*transform: rotate(360deg);*/
+        background-color: #000000;
+        margin-left: 300px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
