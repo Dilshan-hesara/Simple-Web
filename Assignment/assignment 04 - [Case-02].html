@@ -11,27 +11,8 @@
             background-color: #ffa859;
         }
 
-        div:first-child{
-            content: "";
-            border: 10px solid #000000;
-            border-top-color: #98aeff;
-            border-radius: 100%;
 
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            margin: auto;
-
-            transition-duration: 1s;
-        }
-
-        div:hover{
-            transform: rotate(360deg);
-        }
-
-       div>div{
+       div{
             position: fixed;
             height: 300px;
             aspect-ratio: 1/1;
@@ -45,9 +26,21 @@
             border-radius: 100%;
             margin: auto;
             transition-duration: 2s;
+
+
+
+           border: 10px solid #000000;
+           border-top-color: #9817c3;
+
         }
 
-        div>div>h1{
+
+
+        div:hover{
+            transform: rotate(360deg);
+        }
+
+        div>h1{
             height: fit-content;
             width: fit-content;
 
@@ -66,12 +59,12 @@
 </head>
 <body>
 
-<div>
+
     <div>
         <h1>HELLOOW</h1>
     </div>
 
-</div>
+
 
 </body>
 </html>
