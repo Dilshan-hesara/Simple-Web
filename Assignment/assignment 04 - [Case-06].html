@@ -29,10 +29,43 @@
       left: 0;
       right: 0;
       margin: auto;
+      animation: roadanim infinite linear;
+      animation-duration: 5s;
 
     }
 
 
+
+    section>div:nth-child(3){
+      background-image: url("../assent/animation_car/road.jpg");
+      width: fit-content;
+      height:fit-content;
+      position: absolute;
+
+      bottom: 0;
+      animation: roadanim infinite linear;
+      animation-duration: 5s;
+    }
+
+
+
+    @keyframes roadanim {
+      0%{
+        transform: translateX(0);
+      }
+      25%{
+        transform: translateX(-25%);
+      }
+      50%{
+        transform: translateX(-50%);
+      }
+      75%{
+        transform: translateX(-75%);
+      }
+      100%{
+        transform: translateX(-80%);
+      }
+    }
 
   </style>
 </head>
