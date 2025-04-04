@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+
+  // var x= 10;
+  // console.log(x);
+  //
+  // console.log(typeof x);
+  //
+  // x="avf";
+  // console.log(typeof x)
+  //
+  // x =null;
+  //
+  // console.log(typeof x)
+
+  // var x = null;
+  // console.log(typeof x); //object keyla enne js vala bug ekk
+
+  var a=undefined;
+  console.log(typeof a); //undfiend
+
+  var x;
+  console.log(typeof x)
+
+  x = Symbol('foo');
+  console.log(typeof x)
+
+  x = BigInt(20000000000000000);
+  console.log(typeof x)
+
+  //object
+  var y ={
+    id: 20,
+    name: "dilshan",
+    age: 200
+
+
+  }
+  console.log(typeof y)
+
+
+  //arry
+  var z =[1,2,3,3,45,6,];
+  console.log(typeof z);
+
+  // method 01
+  function myName() {
+    return 'dils';
+
+  }
+
+  //method 02
+  var getAge = function () {
+    return 20;
+
+  }
+
+  console.log(typeof getAge);
+
+</script>
+
+</body>
+</html>
